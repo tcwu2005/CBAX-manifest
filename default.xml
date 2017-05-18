@@ -4,7 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
-           fetch="." />
+           fetch="git://git.osdn.net/gitroot/android-x86/" />
   <remote  name="sf"
            fetch="https://git.code.sf.net/p/android-x86/" />
   <remote name="tcwu2005" 
