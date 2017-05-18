@@ -5,6 +5,10 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
            fetch="." />
+  <remote  name="sf"
+           fetch="https://git.code.sf.net/p/android-x86/" />
+  <remote name="tcwu2005" 
+           fetch="https://github.com/tcwu2005/" />
   <default revision="refs/tags/android-5.1.1_r30"
            remote="aosp"
            sync-c="true"
@@ -532,7 +536,7 @@
   <project path="sdk" name="platform/sdk" groups="pdk-cw-fs" />
   <project path="system/keymaster" name="platform/system/keymaster" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
-  <project path="system/netd" name="platform/system/netd" groups="pdk" />
+  <project path="system/netd" name="system_netd" groups="pdk" remote="sf" revision="lollipop-x86" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
@@ -548,5 +552,5 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-
+  <project path="external/lxc" name="platform_external_lxc" remote="tcwu2005" revision="Android-x86-5.1" />
 </manifest>
