@@ -7,8 +7,11 @@
            fetch="git://git.osdn.net/gitroot/android-x86/" />
   <remote  name="sf"
            fetch="https://git.code.sf.net/p/android-x86/" />
+  <!--
   <remote name="tcwu2005" 
-           fetch="https://github.com/tcwu2005/" />
+           fetch="https://github.com/tcwu2005/" />  -->
+  <remote name="github"
+          fetch="https://github.com/" />
   <default revision="refs/tags/android-5.1.1_r30"
            remote="aosp"
            sync-c="true"
@@ -19,7 +22,7 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <!-- from github/tcwu2005 -->
-    <project path="kernel" name="kernel" remote="tcwu2005" revision="kernel-4.0-vmi" />
+    <project path="kernel" name="tcwu2005/CBAX-manifest" remote="github" revision="kernel-4.0-vmi" />
   <project path="art" name="platform/art" groups="pdk" remote="x86" revision="lollipop-x86" />
   <project path="bionic" name="platform/bionic" groups="pdk" remote="x86" revision="lollipop-x86" />
   <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="lollipop-x86" />
@@ -554,5 +557,6 @@
   <project path="tools/studio/translation" name="platform/tools/studio/translation" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
-  <project path="external/lxc" name="platform_external_lxc" remote="tcwu2005" revision="Android-x86-5.1" />
+  <!-- from github/tcwu2005 -->
+    <project path="external/lxc" name="tcwu2005/platform_external_lxc" remote="github" revision="Android-x86-5.1" />
 </manifest>
